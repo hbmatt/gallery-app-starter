@@ -137,7 +137,7 @@ button {
   border-image: linear-gradient(180deg, var(--gradient-top), var(--gradient-bottom)) 1;
 }
 
-.login-form, .description-form {
+.login-form {
   margin: 0 auto;
   min-width: 400px;
   width: 70%;
@@ -145,21 +145,21 @@ button {
 }
 
 @media(max-width: 576px) {
-  .login-form, .description-form {
+  .login-form {
     width: 100%;
     min-width: auto;
   }
 }
 
 
-.login-form label, .description-form label {
+.login-form label {
   display: block;
   margin-bottom: 0.5em;
   font-size: 1em;
   font-weight: 700;
 }
 
-.login-form .field, .description-form .field {
+.login-form .field {
   box-sizing: border-box;
   clear: both;
   font-size: 1em;
@@ -167,7 +167,7 @@ button {
   text-align: inherit;
 }
 
-.login-form input, .description-form input {
+.login-form input {
   max-width: 100%;
   width: 100%;
   background-color: #fff;
@@ -183,7 +183,7 @@ button {
   margin-bottom: 0.75em;
 }
 
-.login-form button, .description-form button {
+.login-form button {
   background-color: var(--title-accent);
   border-radius: 0.375em;
   display: inline-flex;
@@ -197,26 +197,6 @@ button {
   box-shadow: none;
   border: 1px solid transparent;
   float: right;
-}
-
-.description-form textarea {
-  max-height: 40em;
-  min-height: 8em;
-  display: block;
-  max-width: 100%;
-  min-width: 100%;
-  padding: calc(.75em - 1px);
-  resize: vertical;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 0.375em;
-  box-shadow: none;
-  box-sizing: border-box;
-  font-family: var(--font);
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 0.75em;
 }
 
 textarea:focus, textarea:focus-visible, input:focus, input:focus-visible {
@@ -280,6 +260,33 @@ textarea:focus, textarea:focus-visible, input:focus, input:focus-visible {
   padding-left: 15px;
 }
 
+.desc--active {
+  cursor: pointer;
+}
+
+.desc--hidden, .desc-input--hidden {
+  display: none;
+}
+
+.desc-input--active {
+  min-height: 40px;
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: calc(.75em - 1px);
+  resize: vertical;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.75em;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -303,6 +310,30 @@ textarea:focus, textarea:focus-visible, input:focus, input:focus-visible {
   background-color: #fff;
   border-bottom: 3px solid var(--body-accent);
   padding: 3px 8px;
+}
+
+.backdrop .name--input {
+  border-bottom: none;
+}
+
+.backdrop .name--active, .backdrop .name-input--active {
+  outline: none;
+  border: none;
+}
+
+.backdrop .name--active {
+  cursor: pointer;
+}
+
+.backdrop .name--hidden, .backdrop .name-input--hidden {
+  display: none;
+}
+
+.backdrop .name-input--active {
+  font: inherit;
+  color: inherit;
+  padding: 3px 8px;
+  border-bottom: 3px solid var(--title-accent);
 }
 
 .backdrop .buttons {

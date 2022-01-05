@@ -5,6 +5,7 @@ import { projectStorage, projectFirestore } from '../firebase/config';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useKeyPress from '../hooks/useKeyPress';
+import FileName from './filename';
 
 const Modal = ({ selectedImg, setSelectedImg, gallery, setError }) => {
   const { currentUser } = useContext(AuthContext);
@@ -73,6 +74,14 @@ const Modal = ({ selectedImg, setSelectedImg, gallery, setError }) => {
     };
   }
 
+  const setName = (name) => {
+    // references
+    const collectionRef = projectFirestore.collection(gallery);
+    const documentRef = collectionRef.doc(selectedImg.id);
+
+    documentRef.set({name: name}, { merge: true });
+  }
+
   return (
     <motion.div className="backdrop" onClick={handleClick}
     initial={{ opacity: 0 }}
@@ -86,7 +95,7 @@ const Modal = ({ selectedImg, setSelectedImg, gallery, setError }) => {
         exit={{ y: "-100vh" }}
       >
         <img src={selectedImg.url} alt="Enlarged pic" />
-        <div className="name">{selectedImg.url.split(/(\/o\/)(..*)(\?alt)/)[2].split('.')[0]}</div>
+        <FileName name={selectedImg.name || selectedImg.url.split(/(\/o\/)(..*)(\?alt)/)[2].split('.')[0]} setName={setName} />
       </motion.div>
       <div className="buttons">
         <div className="close-button"></div>
