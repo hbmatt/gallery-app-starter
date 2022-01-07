@@ -17,9 +17,6 @@ const Description = ({ character }) => {
   const onChange = (e) => setInputValue(e.target.value);
   const onClick = useCallback(() => setIsInputActive(true), [setIsInputActive]);
 
-  console.log(inputValue);
-  console.log(desc);
-
   const setDescription = (description) => {
     // references
     const collectionRef = projectFirestore.collection('CharacterDescriptions');
