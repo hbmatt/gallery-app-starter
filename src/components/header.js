@@ -21,7 +21,6 @@ const Header = ({ title }) => {
       </div>
       <div className="nav">
         <Link href="/"><button>home</button></Link>
-        { currentUser && <Link href="/admin/description/edit"><button>edit descriptions</button></Link> }
         { !currentUser && <Link href="/login"><button>sign in</button></Link> }
         { currentUser && <button onClick={signOut}>sign out</button> }
       </div>
