@@ -107,7 +107,7 @@ Empty character galleries will not show up on the homepage until an image has be
 
 To add descriptions to your galleries, log in and navigate to the gallery you wish to add a description to.
 
-To edit gallery descriptions or image names, click on the text you wish to edit and hit 'Enter' to save. Hitting 'Esc' will exit the edit textbox without saving any changes.
+To edit gallery descriptions or image display names, click on the text you wish to edit and hit 'Enter' to save. Hitting 'Esc' will exit the edit textbox without saving any changes.
 
 ## Customizing Appearance
 
