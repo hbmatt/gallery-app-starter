@@ -20,7 +20,8 @@ const useStorage = (file, gallery, galleryName) => {
     }, async () => {
       const url = await storageRef.getDownloadURL();
       const createdAt = timestamp();
-      collectionRef.add({ url, createdAt })
+      const name = storageRef.name;
+      collectionRef.add({ url, name, createdAt })
       setUrl(url);
       let thumbnail = await thumbnailRef.doc(gallery).get();
       if (thumbnail && thumbnail.exists) {
