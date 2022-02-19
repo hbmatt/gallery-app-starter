@@ -1,6 +1,6 @@
 # Gallery App
 
-An image gallery made of character albums with editable album descriptions and image captions. Originally made by following a [tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0) then expanded on as a way of storing image references with a place for credits and a description for a variety of characters on one website. Directions written for personal reference as well as any friends who would want to use this app.
+An image gallery made of character albums with editable album descriptions and image captions. Originally made by following a [tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0) then expanded on and converted into Next.js as a way of storing image references with a place for credits and a description for a variety of characters on one static website. Directions written for personal reference as well as any friends who would want to use this app.
 
 ## Table of Contents
 
