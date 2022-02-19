@@ -5,6 +5,7 @@
 - [Create Firebase Database](#create-firebase-database)
 - [Create Character Pages](#create-character-pages)
 - [Customizing Appearance](#customizing-appearance)
+- [Credits](#credits)
 
 ## Create Firebase Database
 
@@ -126,3 +127,6 @@ To change the colors used in the app, go to [/src/styles/globals.css](src/styles
 ```
 
 To change the favicon for the app, replace the default favicon.ico in the [/public](public) directory.
+
+## Credits
+Based off of [Firegram Tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0). Keypress hook from https://usehooks.com/useKeyPress/. [Authentication tutorial](https://www.newline.co/@satansdeer/firebase-authentication-with-react--4c45a17b) used.

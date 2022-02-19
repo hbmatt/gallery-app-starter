@@ -1,3 +1,5 @@
+// referenced https://www.newline.co/@satansdeer/firebase-authentication-with-react--4c45a17b
+
 import { useState, useEffect, createContext } from 'react';
 import { projectAuth } from '../firebase/config';
 
