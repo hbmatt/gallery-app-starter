@@ -1,10 +1,13 @@
 # Gallery App
 
+An image gallery made of character albums with editable album descriptions and image captions. Originally made by following a [tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0) then expanded on as a way of storing image references with a place for credits and a description for a variety of characters on one website. Directions written for personal reference as well as any friends who would want to use this app.
+
 ## Table of Contents
 
 - [Create Firebase Database](#create-firebase-database)
 - [Create Character Pages](#create-character-pages)
 - [Customizing Appearance](#customizing-appearance)
+- [Deploying to Host](#deploying-to-host)
 - [Credits](#credits)
 
 ## Create Firebase Database
@@ -127,6 +130,10 @@ To change the colors used in the app, go to [/src/styles/globals.css](src/styles
 ```
 
 To change the favicon for the app, replace the default favicon.ico in the [/public](public) directory.
+
+## Deploying to Host
+
+TBA, but will cover how to deploy this site to Neocities (both manually and through GitHub actions) and GitHub pages.
 
 ## Credits
 Based off of [Firegram Tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0). Keypress hook from https://usehooks.com/useKeyPress/. [Authentication tutorial](https://www.newline.co/@satansdeer/firebase-authentication-with-react--4c45a17b) used.
