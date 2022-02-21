@@ -136,4 +136,4 @@ To change the favicon for the app, replace the default favicon.ico in the [/publ
 TBA, but will cover how to deploy this site to Neocities (both manually and through GitHub actions) and GitHub pages.
 
 ## Credits
-Based off of [Firegram Tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0). Keypress hook from https://usehooks.com/useKeyPress/. [Authentication tutorial](https://www.newline.co/@satansdeer/firebase-authentication-with-react--4c45a17b) used.
+Based off of [Firegram Tutorial](https://www.youtube.com/watch?v=vUe91uOx7R0). Keypress hook from https://usehooks.com/useKeyPress/. [Authentication tutorial](https://www.newline.co/@satansdeer/firebase-authentication-with-react--4c45a17b), [Inline Edit tutorial](https://joelmturner.com/blog/inline-text-edit-react-hooks/) used.

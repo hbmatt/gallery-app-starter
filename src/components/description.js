@@ -1,3 +1,5 @@
+// inline edit implemented using https://joelmturner.com/blog/inline-text-edit-react-hooks/
+
 import useDescFirestore from '../hooks/useDescFirestore'
 import { projectFirestore } from '../firebase/config';
 import { useState, useEffect, useContext, useRef, useCallback } from 'react';
