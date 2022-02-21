@@ -1,9 +1,9 @@
-import useThumbnailFirestore from '../hooks/useThumbnailFirestore';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import useFirestore from '../hooks/useFirestore';
 
 const GalleryGrid = () => {
-  const { docs } = useThumbnailFirestore();
+  const { docs } = useFirestore('GalleryThumbnails', ['galleryName', 'asc']);
 
   return(
     <div className="img-grid">
